@@ -81,10 +81,10 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
                 CLOSED TEMPORARILY
               </Text>
             )}
-            <Spacer position="left" size="large">
+            <Spacer position="top" size="large">
               {isOpenNow && <SvgXml xml={open} width={20} height={20} />}
             </Spacer>
-            <Spacer position="left" size="large">
+            <Spacer position="top" size="large">
               <Image style={{ width: 15, height: 15 }} source={{ uri: icon }} />
             </Spacer>
           </SectionEnd>
