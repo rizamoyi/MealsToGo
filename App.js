@@ -1,9 +1,10 @@
 import React from "react";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { ThemeProvider } from "styled-components/native";
-import { View, Text } from "react-native";
+import { Text } from "react-native";
+import { SafeArea } from "./src/components/utility/safe-area.component";
 
 import {
   useFonts as useOswald,
@@ -14,15 +15,23 @@ import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
 import { theme } from "./src/infrastructure/theme";
 import { RestaurantsScreen } from "./src/features/restaurants/screens/restaurants.screen";
 
-function HomeScreen() {
+const SettingsScreen = () => {
   return (
-    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
-      <Text>Home Screen</Text>
-    </View>
+    <SafeArea>
+      <Text>Settings Screen</Text>
+    </SafeArea>
   );
-}
+};
 
-const Stack = createNativeStackNavigator();
+const MapScreen = () => {
+  return (
+    <SafeArea>
+      <Text>Map Screen</Text>
+    </SafeArea>
+  );
+};
+
+const Tab = createBottomTabNavigator();
 
 export default function App() {
   const [oswaldLoaded] = useOswald({
@@ -38,14 +47,17 @@ export default function App() {
   }
 
   return (
-    <NavigationContainer>
+    <>
       <ThemeProvider theme={theme}>
-        <Stack.Navigator initialRouteName="Home">
-          <Stack.Screen name="Home" component={HomeScreen} />
-          <Stack.Screen name="Restaurants" component={RestaurantsScreen} />
-        </Stack.Navigator>
+        <NavigationContainer>
+          <Tab.Navigator initialRouteName="Home">
+            <Tab.Screen name="Restaurants" component={RestaurantsScreen} />
+            <Tab.Screen name="Map" component={MapScreen} />
+            <Tab.Screen name="Settings" component={SettingsScreen} />
+          </Tab.Navigator>
+        </NavigationContainer>
       </ThemeProvider>
       <ExpoStatusBar style="auto" />
-    </NavigationContainer>
+    </>
   );
 }
