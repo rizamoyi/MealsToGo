@@ -19,7 +19,7 @@ import {
 
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
-    name = "Some Restaurant",
+    name = "Some random restaurant",
     icon = "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
     photos = [
       "https://www.foodserviceandhospitality.com/wp-content/uploads/2016/09/Restaurant-Placeholder-001.jpg",
