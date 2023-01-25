@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, createContext } from "react";
+import React, { useState, useEffect, createContext } from "react";
 import {
   restaurantsRequest,
   restaurantsTransform,

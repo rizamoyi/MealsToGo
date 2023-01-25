@@ -43,14 +43,11 @@ export const RestaurantsScreen = () => {
       </SearchContainer>
       <RestaurantList
         data={restaurants}
-        renderItem={({ item }) => {
-          console.log("item", item);
-          return (
-            <Spacer position="bottom" size="large">
-              <RestaurantInfoCard restaurant={item} />
-            </Spacer>
-          );
-        }}
+        renderItem={({ item }) => (
+          <Spacer position="bottom" size="large">
+            <RestaurantInfoCard restaurant={item} />
+          </Spacer>
+        )}
         keyExtractor={(item) => item.name}
       />
     </SafeArea>
