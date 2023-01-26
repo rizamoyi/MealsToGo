@@ -11,7 +11,6 @@ export const LocationContextProvider = ({ children }) => {
 
   const onSearch = (searchKeyword) => {
     setIsLoading(true);
-    console.log("searchKeyword", searchKeyword);
     if (!searchKeyword.length) {
       return;
     }
@@ -19,8 +18,8 @@ export const LocationContextProvider = ({ children }) => {
       .then(locationTransform)
       .then((result) => {
         setIsLoading(false);
-        // setKeyword(searchKeyword);
         setLocation(result);
+        console.log("result", result);
       })
       .catch((err) => {
         setIsLoading(false);
