@@ -1,7 +1,6 @@
 import { initializeApp } from "firebase/app";
 
 // Optionally import the services that you want to use
-import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 // import {...} from "firebase/database";
 // import {...} from "firebase/firestore";
 // import {...} from "firebase/functions";
@@ -17,22 +16,7 @@ const firebaseConfig = {
   appId: "1:405110037320:web:dd8f2361d0352561afb17d",
 };
 
-const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-
-export const signIn = (email, password) => {
-  signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      // Signed in
-      const user = userCredential.user;
-      console.log(user);
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log(errorCode, errorMessage);
-    });
-};
+export const app = initializeApp(firebaseConfig);
 
 // For more information on how to access Firebase in your project,
 // see the Firebase documentation: https://firebase.google.com/docs/web/setup#access-firebase
