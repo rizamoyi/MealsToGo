@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 
 import { ThemeProvider } from "styled-components/native";
@@ -16,7 +16,18 @@ import { RestaurantsContextProvider } from "./src/services/restaurants.context";
 import { LocationContextProvider } from "./src/services/location/location.context";
 import { FavouritesContextProvider } from "./src/services/favourites/favourites.context";
 
+import { signIn } from "./src/utils/firebaseConfig";
+
 export default function App() {
+  const [isAuthenticated, setIsAuthenticated] = React.useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      signIn("sam@gmail.com", "test1234");
+      setIsAuthenticated(true);
+    }, 2000);
+  }, []);
+
   const [oswaldLoaded] = useOswald({
     Oswald_400Regular,
   });
@@ -26,6 +37,10 @@ export default function App() {
   });
 
   if (!oswaldLoaded || !latoLoaded) {
+    return null;
+  }
+
+  if (!isAuthenticated) {
     return null;
   }
 
