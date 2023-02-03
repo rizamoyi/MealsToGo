@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import { Button } from "react-native-paper";
+import { Button, TextInput } from "react-native-paper";
 
 export const AccountBackground = styled.ImageBackground.attrs({
   source: require("../../../../assets/home_bg.jpg"),
@@ -30,4 +30,20 @@ export const AuthButton = styled(Button)`
   align-items: center;
   justify-content: center;
   margin-top: ${(props) => props.theme.space[2]};
+`;
+
+export const AuthInput = styled(TextInput)`
+  width: 300px;
+`;
+
+export const Title = styled.Text`
+  font-size: 30px;
+`;
+
+export const ErrorContainer = styled.View`
+  max-width: 300px;
+  align-items: center;
+  justify-content: center;
+  margin-top: ${(props) => props.theme.space[2]};
+  margin-bottom: ${(props) => props.theme.space[2]};
 `;
