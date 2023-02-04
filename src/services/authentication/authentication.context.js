@@ -1,3 +1,4 @@
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState, createContext } from "react";
 
 import { logInRequest } from "./authentication.service";
@@ -27,13 +28,32 @@ export const AuthenticationContextProvider = ({ children }) => {
     }, 2000);
   };
 
+  const onRegister = (email, password, repeatedPassword) => {
+    if (password !== repeatedPassword) {
+      setError("Passwords do not match!");
+      return;
+    }
+
+    createUserWithEmailAndPassword(email, password)
+      .then((u) => {
+        setIsLoading(false);
+        setUser(u);
+      })
+      .catch((err) => {
+        setIsLoading(false);
+        setError(err.toString());
+      });
+  };
+
   return (
     <AuthenticationContext.Provider
       value={{
+        isAuthenticated: !!user,
         user,
         isLoading,
         error,
         onLogin,
+        onRegister,
       }}
     >
       {children}
