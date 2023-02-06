@@ -1,5 +1,4 @@
 import React from "react";
-import { Text } from "react-native";
 
 import {
   createStackNavigator,
@@ -7,14 +6,11 @@ import {
 } from "@react-navigation/stack";
 
 import { SettingsScreen } from "../../features/settings/screens/settings.screen";
+import { FavouritesScreen } from "../../features/settings/screens/favourites.screen";
 
 const SettingsStack = createStackNavigator();
 
-const favScreen = () => {
-  return <Text>Favourites Screen</Text>;
-};
-
-export const SettingsNavigator = ({ route, navigation }) => {
+export const SettingsNavigator = () => {
   return (
     <SettingsStack.Navigator
       screenOptions={{
@@ -23,7 +19,7 @@ export const SettingsNavigator = ({ route, navigation }) => {
       }}
     >
       <SettingsStack.Screen name="Settings" component={SettingsScreen} />
-      <SettingsStack.Screen name="Favourites" component={favScreen} />
+      <SettingsStack.Screen name="Favourites" component={FavouritesScreen} />
     </SettingsStack.Navigator>
   );
 };
