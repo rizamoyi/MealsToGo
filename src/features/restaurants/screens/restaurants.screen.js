@@ -2,6 +2,8 @@ import React, { useState, useContext } from "react";
 import { TouchableOpacity } from "react-native";
 import { MD2Colors } from "react-native-paper";
 
+import { FadeInView } from "../../../components/animations/fade.animation";
+
 import { FavouritesBar } from "../../../components/favourites/favourites-bar.component";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
 import { SafeArea } from "../../../components/utility/safe-area.component";
@@ -49,7 +51,9 @@ export const RestaurantsScreen = ({ navigation }) => {
             }
           >
             <Spacer position="bottom" size="large">
-              <RestaurantInfoCard restaurant={item} />
+              <FadeInView>
+                <RestaurantInfoCard restaurant={item} />
+              </FadeInView>
             </Spacer>
           </TouchableOpacity>
         )}
