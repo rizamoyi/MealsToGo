@@ -68,7 +68,7 @@ export const RegisterScreen = ({ navigation }) => {
         </Spacer>
 
         <Spacer size="large">
-          {isLoading ? (
+          {!isLoading ? (
             <AuthButton
               icon="email"
               mode="contained"
