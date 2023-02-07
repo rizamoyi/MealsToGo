@@ -18,7 +18,7 @@ export const SettingsNavigator = () => {
         cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
       }}
     >
-      <SettingsStack.Screen name="Settings" component={SettingsScreen} />
+      <SettingsStack.Screen name="Setting" component={SettingsScreen} />
       <SettingsStack.Screen name="Favourites" component={FavouritesScreen} />
     </SettingsStack.Navigator>
   );
