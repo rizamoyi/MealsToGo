@@ -1,8 +1,11 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import styled from "styled-components/native";
 import { Camera, CameraType } from "expo-camera";
 import { Button } from "react-native-paper";
 import { Text, View, TouchableOpacity } from "react-native";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+
+import { AuthenticationContext } from "../../../services/authentication/authentication.context";
 
 const ProfileCamera = styled(Camera)`
   width: 100%;
@@ -16,14 +19,16 @@ const InnerSnap = styled.View`
   z-index: 999;
 `;
 
-export const CameraScreen = () => {
+export const CameraScreen = ({ navigation }) => {
   const [permission, requestPermission] = Camera.useCameraPermissions();
   const cameraRef = useRef();
+  const { user } = useContext(AuthenticationContext);
 
   const onSnap = async () => {
     if (cameraRef) {
       const photo = await cameraRef.current.takePictureAsync();
-      console.log(photo);
+      AsyncStorage.setItem(`${user.uid}`, photo.uri);
+      navigation.goBack();
     }
   };
 
