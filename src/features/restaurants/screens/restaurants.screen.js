@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { TouchableOpacity } from "react-native";
 import { MD2Colors } from "react-native-paper";
 
@@ -18,6 +18,7 @@ import {
   LoadingContainer,
   Loading,
 } from "../components/restaurant-list.styles";
+import { restaurantsRequest } from "../../../services/restaurants.service";
 
 export const RestaurantsScreen = ({ navigation }) => {
   const { isLoading, restaurants } = useContext(RestaurantsContext);
@@ -25,6 +26,19 @@ export const RestaurantsScreen = ({ navigation }) => {
 
   const [isToggled, setIsToggled] = useState(false);
 
+  console.log("restaurants", restaurants);
+
+  useEffect(() => {
+    restaurantsRequest("chicago")
+      .then((results) => {
+        console.log("results", results);
+      })
+      .then((err) => {
+        console.log("errrrr", err);
+      });
+  }, []);
+
+  console.log("restaurants", restaurants);
   return (
     <SafeArea>
       {isLoading && (
