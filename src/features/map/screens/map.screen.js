@@ -23,8 +23,8 @@ export const MapScreen = ({ navigation }) => {
   useEffect(() => {
     const northeastLat = viewport.northeast.lat;
     const southwestLat = viewport.southwest.lat;
-    const latDelta = northeastLat - southwestLat;
-    setLatDelta(latDelta);
+
+    setLatDelta(northeastLat - southwestLat);
   }, [location, viewport]);
 
   return (
