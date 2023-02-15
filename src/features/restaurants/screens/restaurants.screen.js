@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState, useContext } from "react";
 import { TouchableOpacity } from "react-native";
 import { MD2Colors } from "react-native-paper";
 
@@ -18,7 +18,6 @@ import {
   LoadingContainer,
   Loading,
 } from "../components/restaurant-list.styles";
-import { restaurantsRequest } from "../../../services/restaurants.service";
 
 export const RestaurantsScreen = ({ navigation }) => {
   const { isLoading, restaurants } = useContext(RestaurantsContext);
