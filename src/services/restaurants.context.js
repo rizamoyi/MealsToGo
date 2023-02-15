@@ -13,7 +13,6 @@ export const RestaurantsContextProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const { location } = useContext(LocationContext);
-  console.log("restaurants", restaurants);
 
   const retrieveRestaurants = (loc) => {
     setIsLoading(true);
@@ -22,7 +21,6 @@ export const RestaurantsContextProvider = ({ children }) => {
     restaurantsRequest(loc)
       .then(restaurantsTransform)
       .then((results) => {
-        console.log("results", results);
         setRestaurants(results);
         setIsLoading(false);
       })

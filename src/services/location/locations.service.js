@@ -2,14 +2,13 @@ import camelize from "camelize";
 
 export const locationRequest = (searchTerm) => {
   return fetch(
-    `http://127.0.0.1:5001/meals-to-go-cb72d/us-central1/geocode?city=${searchTerm}`
+    `https://us-central1-meals-to-go-cb72d.cloudfunctions.net/geocode?city=${searchTerm}`
   ).then((res) => {
     return res.json();
   });
 };
 
 export const locationTransform = (result) => {
-  console.log("result", result);
   const formattedResponse = camelize(result);
   const { geometry = {} } = formattedResponse.results[0];
   const { lat, lng } = geometry.location;

@@ -2,13 +2,13 @@ import camelize from "camelize";
 
 export const restaurantsRequest = (location) => {
   return fetch(
-    `http://127.0.0.1:5001/meals-to-go-cb72d/us-central1/geocode?placesNearby?location=${location}`
+    `https://us-central1-meals-to-go-cb72d.cloudfunctions.net/placesNearby?location=${location}`
   ).then((res) => {
-    console.log("res", res);
+    return res.json();
   });
 };
 
-export const restaurantsTransform = ({ results = [] }) => {
+export const restaurantsTransform = (results = []) => {
   const mappedResults = results.map((restaurant) => {
     return {
       ...restaurant,
