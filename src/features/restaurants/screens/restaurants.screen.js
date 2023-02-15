@@ -26,19 +26,6 @@ export const RestaurantsScreen = ({ navigation }) => {
 
   const [isToggled, setIsToggled] = useState(false);
 
-  console.log("restaurants", restaurants);
-
-  useEffect(() => {
-    restaurantsRequest("chicago")
-      .then((results) => {
-        console.log("results", results);
-      })
-      .then((err) => {
-        console.log("errrrr", err);
-      });
-  }, []);
-
-  console.log("restaurants", restaurants);
   return (
     <SafeArea>
       {isLoading && (
