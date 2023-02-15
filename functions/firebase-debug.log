@@ -1,0 +1,891 @@
+[debug] [2023-02-15T10:15:19.880Z] ----------------------------------------------------------------------
+[debug] [2023-02-15T10:15:19.882Z] Command:       /home/samkach/.nvm/versions/node/v16.17.0/bin/node /home/samkach/.nvm/versions/node/v16.17.0/bin/firebase emulators:start --only functions
+[debug] [2023-02-15T10:15:19.882Z] CLI Version:   11.22.0
+[debug] [2023-02-15T10:15:19.882Z] Platform:      linux
+[debug] [2023-02-15T10:15:19.882Z] Node Version:  v16.17.0
+[debug] [2023-02-15T10:15:19.882Z] Time:          Wed Feb 15 2023 13:15:19 GMT+0300 (East Africa Time)
+[debug] [2023-02-15T10:15:19.883Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-15T10:15:19.936Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-15T10:15:19.937Z] > authorizing via signed-in user (samwelmoyi@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-02-15T10:15:19.944Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-15T10:15:19.945Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-02-15T10:15:19.949Z] [hub] writing locator at /tmp/hub-meals-to-go-cb72d.json
+[debug] [2023-02-15T10:15:19.960Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-15T10:15:19.960Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-02-15T10:15:19.960Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-02-15T10:15:19.962Z] defaultcredentials: writing to file /home/samkach/.config/firebase/samwelmoyi_gmail_com_application_default_credentials.json
+[debug] [2023-02-15T10:15:19.964Z] Setting GAC to /home/samkach/.config/firebase/samwelmoyi_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/samkach/.config/firebase/samwelmoyi_gmail_com_application_default_credentials.json"}}
+[debug] [2023-02-15T10:15:19.966Z] > refreshing access token with scopes: []
+[debug] [2023-02-15T10:15:19.968Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-02-15T10:15:19.968Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-02-15T10:15:20.355Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-02-15T10:15:20.355Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-02-15T10:15:20.383Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/meals-to-go-cb72d/adminSdkConfig [none]
+[debug] [2023-02-15T10:15:20.905Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/meals-to-go-cb72d/adminSdkConfig 200
+[debug] [2023-02-15T10:15:20.905Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/meals-to-go-cb72d/adminSdkConfig {"projectId":"meals-to-go-cb72d","storageBucket":"meals-to-go-cb72d.appspot.com"}
+[debug] [2023-02-15T10:15:20.937Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-02-15T10:15:20.938Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-02-15T10:15:20.938Z] Starting Emulator UI with command {"binary":"node","args":["/home/samkach/.cache/firebase/emulators/ui-v1.11.2/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/samkach/.cache/firebase/emulators/ui-v1.11.2/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-02-15T10:15:21.056Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-02-15T10:15:21.057Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "/home/samkach/Desktop/projects/MealsToGo/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/samkach/Desktop/projects/MealsToGo/functions\" for Cloud Functions..."}}
+[debug] [2023-02-15T10:15:21.226Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-15T10:15:21.716Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-15T10:15:21.716Z] Building nodejs source
+[debug] [2023-02-15T10:15:21.716Z] Failed to find version of module node: reached end of search path /home/samkach/Desktop/projects/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-15T10:15:21.719Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-15T10:15:21.724Z] Found firebase-functions binary at '/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-15T10:15:21.855Z] Serving at port 8135
+
+[debug] [2023-02-15T10:15:21.950Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-15T10:15:21.959Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[info] ✔  functions[us-central1-geocode]: http function initialized (http://127.0.0.1:5001/meals-to-go-cb72d/us-central1/geocode). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/meals-to-go-cb72d/us-central1/geocode)."}}
+[info] ✔  functions[us-central1-placesNearby]: http function initialized (http://127.0.0.1:5001/meals-to-go-cb72d/us-central1/placesNearby). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/meals-to-go-cb72d/us-central1/placesNearby)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-02-15T10:15:56.875Z] [work-queue] {"queuedWork":["/meals-to-go-cb72d/us-central1/geocode-2023-02-15T10:15:56.875Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-15T10:15:56.875Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/meals-to-go-cb72d/us-central1/geocode-2023-02-15T10:15:56.875Z"],"workRunningCount":1}
+[debug] [2023-02-15T10:15:56.876Z] Accepted request GET /meals-to-go-cb72d/us-central1/geocode?city=chicago --> us-central1-geocode
+[debug] [2023-02-15T10:15:56.877Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-15T10:15:56.878Z] [functions] Got req.url=/meals-to-go-cb72d/us-central1/geocode?city=chicago, mapping to path=/?city=chicago {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-cb72d/us-central1/geocode?city=chicago, mapping to path=/?city=chicago"}}
+[debug] [2023-02-15T10:15:56.888Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2023-02-15T10:15:56.889Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2023-02-15T10:15:57.638Z] [runtime-status] [33822] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [33822] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-15T10:15:57.638Z] [runtime-status] [33822] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [33822] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:15:57.641Z] [runtime-status] [33822] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [33822] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-02-15T10:15:57.641Z] [runtime-status] [33822] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [33822] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:15:57.671Z] [runtime-status] [33822] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [33822] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-02-15T10:15:57.671Z] [runtime-status] [33822] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [33822] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2023-02-15T10:15:57.672Z] [runtime-status] [33822] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [33822] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:15:57.673Z] [runtime-status] [33822] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [33822] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-15T10:15:57.673Z] [runtime-status] [33822] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [33822] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:15:57.674Z] [runtime-status] [33822] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [33822] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-02-15T10:15:57.726Z] [runtime-status] [33822] Functions runtime initialized. {"cwd":"/home/samkach/Desktop/projects/MealsToGo/functions","node_version":"16.17.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [33822] Functions runtime initialized. {\"cwd\":\"/home/samkach/Desktop/projects/MealsToGo/functions\",\"node_version\":\"16.17.0\"}"}}
+[debug] [2023-02-15T10:15:57.726Z] [runtime-status] [33822] Listening to port: /tmp/fire_emu_791b04b202b280f2.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [33822] Listening to port: /tmp/fire_emu_791b04b202b280f2.sock"}}
+[debug] [2023-02-15T10:15:57.804Z] [worker-us-central1-geocode-b7b9a5bb-dc66-4bea-8eb4-4ece12689a51]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-b7b9a5bb-dc66-4bea-8eb4-4ece12689a51]: IDLE"}}
+[debug] [2023-02-15T10:15:57.805Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2023-02-15T10:15:57.806Z] [worker-us-central1-geocode-b7b9a5bb-dc66-4bea-8eb4-4ece12689a51]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-b7b9a5bb-dc66-4bea-8eb4-4ece12689a51]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2023-02-15T10:15:57.817Z] [worker-us-central1-geocode-b7b9a5bb-dc66-4bea-8eb4-4ece12689a51]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-b7b9a5bb-dc66-4bea-8eb4-4ece12689a51]: IDLE"}}
+[debug] [2023-02-15T10:15:57.818Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 4.489314ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 4.489314ms"}}
+[debug] [2023-02-15T10:15:58.473Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2023-02-15T10:16:20.424Z] [work-queue] {"queuedWork":["/meals-to-go-cb72d/us-central1/geocode-2023-02-15T10:16:20.424Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-15T10:16:20.424Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/meals-to-go-cb72d/us-central1/geocode-2023-02-15T10:16:20.424Z"],"workRunningCount":1}
+[debug] [2023-02-15T10:16:20.424Z] Accepted request GET /meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=true --> us-central1-geocode
+[debug] [2023-02-15T10:16:20.425Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-15T10:16:20.425Z] [functions] Got req.url=/meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=true, mapping to path=/?city=chicago&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=true, mapping to path=/?city=chicago&mock=true"}}
+[debug] [2023-02-15T10:16:20.425Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2023-02-15T10:16:20.426Z] [worker-us-central1-geocode-b7b9a5bb-dc66-4bea-8eb4-4ece12689a51]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-b7b9a5bb-dc66-4bea-8eb4-4ece12689a51]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2023-02-15T10:16:20.433Z] [worker-us-central1-geocode-b7b9a5bb-dc66-4bea-8eb4-4ece12689a51]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-b7b9a5bb-dc66-4bea-8eb4-4ece12689a51]: IDLE"}}
+[debug] [2023-02-15T10:16:20.433Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 1.743127ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 1.743127ms"}}
+[debug] [2023-02-15T10:18:44.459Z] File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2023-02-15T10:18:45.462Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-15T10:18:46.189Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-15T10:18:46.190Z] Building nodejs source
+[debug] [2023-02-15T10:18:46.190Z] Failed to find version of module node: reached end of search path /home/samkach/Desktop/projects/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-15T10:18:46.191Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-15T10:18:46.192Z] Found firebase-functions binary at '/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-15T10:18:46.358Z] Serving at port 8814
+
+[debug] [2023-02-15T10:18:46.488Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-15T10:18:46.495Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-02-15T10:18:46.507Z] [worker-pool] Shutting down IDLE worker (us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-geocode)"}}
+[debug] [2023-02-15T10:18:46.508Z] [worker-us-central1-geocode-b7b9a5bb-dc66-4bea-8eb4-4ece12689a51]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-b7b9a5bb-dc66-4bea-8eb4-4ece12689a51]: FINISHING"}}
+[debug] [2023-02-15T10:18:46.513Z] [worker-us-central1-geocode-b7b9a5bb-dc66-4bea-8eb4-4ece12689a51]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-b7b9a5bb-dc66-4bea-8eb4-4ece12689a51]: exited"}}
+[debug] [2023-02-15T10:18:46.513Z] [worker-us-central1-geocode-b7b9a5bb-dc66-4bea-8eb4-4ece12689a51]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-b7b9a5bb-dc66-4bea-8eb4-4ece12689a51]: FINISHED"}}
+[debug] [2023-02-15T10:19:01.531Z] File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2023-02-15T10:19:02.533Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-15T10:19:03.173Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-15T10:19:03.173Z] Building nodejs source
+[debug] [2023-02-15T10:19:03.173Z] Failed to find version of module node: reached end of search path /home/samkach/Desktop/projects/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-15T10:19:03.175Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-15T10:19:03.176Z] Found firebase-functions binary at '/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-15T10:19:03.363Z] Serving at port 8638
+
+[debug] [2023-02-15T10:19:03.414Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: Unexpected token '}'
+[debug] [2023-02-15T10:19:03.417Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: Unexpected token '}'
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: Unexpected token '}'\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: Unexpected token '}'\n                                         ^"}
+[debug] [2023-02-15T10:19:03.426Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token '}' {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: Unexpected token '}'"}}
+[debug] [2023-02-15T10:19:08.443Z] File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2023-02-15T10:19:09.445Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-15T10:19:10.274Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-15T10:19:10.275Z] Building nodejs source
+[debug] [2023-02-15T10:19:10.275Z] Failed to find version of module node: reached end of search path /home/samkach/Desktop/projects/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-15T10:19:10.276Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-15T10:19:10.278Z] Found firebase-functions binary at '/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-15T10:19:10.481Z] Serving at port 8768
+
+[debug] [2023-02-15T10:19:10.616Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-15T10:19:10.623Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-02-15T10:19:20.398Z] File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2023-02-15T10:19:21.400Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-15T10:19:22.121Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-15T10:19:22.121Z] Building nodejs source
+[debug] [2023-02-15T10:19:22.121Z] Failed to find version of module node: reached end of search path /home/samkach/Desktop/projects/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-15T10:19:22.124Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-15T10:19:22.125Z] Found firebase-functions binary at '/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-15T10:19:22.290Z] Serving at port 8765
+
+[debug] [2023-02-15T10:19:22.408Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-15T10:19:22.418Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-02-15T10:19:37.112Z] File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2023-02-15T10:19:38.113Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-15T10:19:38.845Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-15T10:19:38.845Z] Building nodejs source
+[debug] [2023-02-15T10:19:38.845Z] Failed to find version of module node: reached end of search path /home/samkach/Desktop/projects/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-15T10:19:38.847Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-15T10:19:38.848Z] Found firebase-functions binary at '/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-15T10:19:39.056Z] Serving at port 8972
+
+[debug] [2023-02-15T10:19:39.116Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2023-02-15T10:19:39.116Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2023-02-15T10:19:39.130Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2023-02-15T10:19:40.417Z] File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2023-02-15T10:19:41.418Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-15T10:19:42.004Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-15T10:19:42.004Z] Building nodejs source
+[debug] [2023-02-15T10:19:42.004Z] Failed to find version of module node: reached end of search path /home/samkach/Desktop/projects/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-15T10:19:42.006Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-15T10:19:42.007Z] Found firebase-functions binary at '/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-15T10:19:42.212Z] Serving at port 8080
+
+[debug] [2023-02-15T10:19:42.272Z] Got response from /__/functions.yaml Failed to generate manifest from function source: SyntaxError: missing ) after argument list
+[debug] [2023-02-15T10:19:42.273Z] Failed to parse functions.yamlincomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:
+     ... rom function source: SyntaxError: missing ) after argument list
+                                         ^ {"name":"YAMLException","reason":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line","mark":{"name":null,"buffer":"Failed to generate manifest from function source: SyntaxError: missing ) after argument list\n\u0000","position":61,"line":0,"column":61},"message":"incomplete explicit mapping pair; a key node is missed; or followed by a non-tabulated empty line at line 1, column 62:\n     ... rom function source: SyntaxError: missing ) after argument list\n                                         ^"}
+[debug] [2023-02-15T10:19:42.279Z] shutdown requested via /__/quitquitquit
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to load function definition from source: Failed to generate manifest from function source: SyntaxError: missing ) after argument list"}}
+[debug] [2023-02-15T10:20:03.514Z] File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2023-02-15T10:20:04.517Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-15T10:20:05.245Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-15T10:20:05.245Z] Building nodejs source
+[debug] [2023-02-15T10:20:05.245Z] Failed to find version of module node: reached end of search path /home/samkach/Desktop/projects/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-15T10:20:05.247Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-15T10:20:05.251Z] Found firebase-functions binary at '/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-15T10:20:05.434Z] Serving at port 8083
+
+[debug] [2023-02-15T10:20:05.541Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-15T10:20:05.546Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-02-15T10:20:07.092Z] File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2023-02-15T10:20:08.094Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-15T10:20:08.724Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-15T10:20:08.725Z] Building nodejs source
+[debug] [2023-02-15T10:20:08.725Z] Failed to find version of module node: reached end of search path /home/samkach/Desktop/projects/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-15T10:20:08.727Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-15T10:20:08.728Z] Found firebase-functions binary at '/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-15T10:20:08.888Z] Serving at port 8322
+
+[debug] [2023-02-15T10:20:09.016Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-15T10:20:09.027Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-02-15T10:21:36.600Z] File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2023-02-15T10:21:37.601Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-15T10:21:38.244Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-15T10:21:38.245Z] Building nodejs source
+[debug] [2023-02-15T10:21:38.245Z] Failed to find version of module node: reached end of search path /home/samkach/Desktop/projects/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-15T10:21:38.247Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-15T10:21:38.248Z] Found firebase-functions binary at '/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-15T10:21:38.403Z] Serving at port 8482
+
+[debug] [2023-02-15T10:21:38.505Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-15T10:21:38.511Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-02-15T10:21:55.685Z] File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2023-02-15T10:21:56.686Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-15T10:21:57.291Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-15T10:21:57.292Z] Building nodejs source
+[debug] [2023-02-15T10:21:57.292Z] Failed to find version of module node: reached end of search path /home/samkach/Desktop/projects/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-15T10:21:57.294Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-15T10:21:57.296Z] Found firebase-functions binary at '/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-15T10:21:57.546Z] Serving at port 8361
+
+[debug] [2023-02-15T10:21:57.662Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-15T10:21:57.666Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-02-15T10:22:29.059Z] [work-queue] {"queuedWork":["/meals-to-go-cb72d/us-central1/geocode-2023-02-15T10:22:29.059Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-15T10:22:29.060Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/meals-to-go-cb72d/us-central1/geocode-2023-02-15T10:22:29.059Z"],"workRunningCount":1}
+[debug] [2023-02-15T10:22:29.060Z] Accepted request GET /meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=false --> us-central1-geocode
+[debug] [2023-02-15T10:22:29.061Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-15T10:22:29.062Z] [functions] Got req.url=/meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=false, mapping to path=/?city=chicago&mock=false {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=false, mapping to path=/?city=chicago&mock=false"}}
+[debug] [2023-02-15T10:22:29.062Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2023-02-15T10:22:29.074Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2023-02-15T10:22:29.075Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2023-02-15T10:22:29.846Z] [runtime-status] [35632] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [35632] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-15T10:22:29.847Z] [runtime-status] [35632] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [35632] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:22:29.848Z] [runtime-status] [35632] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [35632] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-02-15T10:22:29.848Z] [runtime-status] [35632] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [35632] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:22:29.882Z] [runtime-status] [35632] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [35632] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-02-15T10:22:29.882Z] [runtime-status] [35632] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [35632] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2023-02-15T10:22:29.883Z] [runtime-status] [35632] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [35632] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:22:29.886Z] [runtime-status] [35632] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [35632] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-15T10:22:29.887Z] [runtime-status] [35632] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [35632] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:22:29.887Z] [runtime-status] [35632] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [35632] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-02-15T10:22:29.934Z] [runtime-status] [35632] Functions runtime initialized. {"cwd":"/home/samkach/Desktop/projects/MealsToGo/functions","node_version":"16.17.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [35632] Functions runtime initialized. {\"cwd\":\"/home/samkach/Desktop/projects/MealsToGo/functions\",\"node_version\":\"16.17.0\"}"}}
+[debug] [2023-02-15T10:22:29.935Z] [runtime-status] [35632] Listening to port: /tmp/fire_emu_43abacf8d548f5cf.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [35632] Listening to port: /tmp/fire_emu_43abacf8d548f5cf.sock"}}
+[debug] [2023-02-15T10:22:29.989Z] [worker-us-central1-geocode-fe63bd9c-8630-4296-98ab-08b20a8ce182]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-fe63bd9c-8630-4296-98ab-08b20a8ce182]: IDLE"}}
+[debug] [2023-02-15T10:22:29.989Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2023-02-15T10:22:29.989Z] [worker-us-central1-geocode-fe63bd9c-8630-4296-98ab-08b20a8ce182]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-fe63bd9c-8630-4296-98ab-08b20a8ce182]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2023-02-15T10:22:29.998Z] [worker-us-central1-geocode-fe63bd9c-8630-4296-98ab-08b20a8ce182]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-fe63bd9c-8630-4296-98ab-08b20a8ce182]: IDLE"}}
+[debug] [2023-02-15T10:22:29.998Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 3.763633ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 3.763633ms"}}
+[debug] [2023-02-15T10:23:12.200Z] File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2023-02-15T10:23:13.202Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-15T10:23:13.837Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-15T10:23:13.838Z] Building nodejs source
+[debug] [2023-02-15T10:23:13.838Z] Failed to find version of module node: reached end of search path /home/samkach/Desktop/projects/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-15T10:23:13.839Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-15T10:23:13.840Z] Found firebase-functions binary at '/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-15T10:23:13.998Z] Serving at port 8966
+
+[debug] [2023-02-15T10:23:14.094Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-15T10:23:14.097Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-02-15T10:23:14.108Z] [worker-pool] Shutting down IDLE worker (us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-geocode)"}}
+[debug] [2023-02-15T10:23:14.108Z] [worker-us-central1-geocode-fe63bd9c-8630-4296-98ab-08b20a8ce182]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-fe63bd9c-8630-4296-98ab-08b20a8ce182]: FINISHING"}}
+[debug] [2023-02-15T10:23:14.114Z] [worker-us-central1-geocode-fe63bd9c-8630-4296-98ab-08b20a8ce182]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-fe63bd9c-8630-4296-98ab-08b20a8ce182]: exited"}}
+[debug] [2023-02-15T10:23:14.114Z] [worker-us-central1-geocode-fe63bd9c-8630-4296-98ab-08b20a8ce182]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-fe63bd9c-8630-4296-98ab-08b20a8ce182]: FINISHED"}}
+[debug] [2023-02-15T10:23:15.376Z] File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2023-02-15T10:23:16.378Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-15T10:23:17.012Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-15T10:23:17.012Z] Building nodejs source
+[debug] [2023-02-15T10:23:17.012Z] Failed to find version of module node: reached end of search path /home/samkach/Desktop/projects/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-15T10:23:17.013Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-15T10:23:17.014Z] Found firebase-functions binary at '/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-15T10:23:17.161Z] Serving at port 8707
+
+[debug] [2023-02-15T10:23:17.250Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-15T10:23:17.255Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-02-15T10:24:04.243Z] [work-queue] {"queuedWork":["/meals-to-go-cb72d/us-central1/geocode-2023-02-15T10:24:04.242Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-15T10:24:04.243Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/meals-to-go-cb72d/us-central1/geocode-2023-02-15T10:24:04.242Z"],"workRunningCount":1}
+[debug] [2023-02-15T10:24:04.243Z] Accepted request GET /meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=true --> us-central1-geocode
+[debug] [2023-02-15T10:24:04.243Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-15T10:24:04.244Z] [functions] Got req.url=/meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=true, mapping to path=/?city=chicago&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=true, mapping to path=/?city=chicago&mock=true"}}
+[debug] [2023-02-15T10:24:04.244Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2023-02-15T10:24:04.253Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2023-02-15T10:24:04.253Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2023-02-15T10:24:05.021Z] [runtime-status] [36095] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36095] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-15T10:24:05.025Z] [runtime-status] [36095] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36095] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:24:05.025Z] [runtime-status] [36095] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36095] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-02-15T10:24:05.025Z] [runtime-status] [36095] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36095] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:24:05.055Z] [runtime-status] [36095] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36095] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-02-15T10:24:05.055Z] [runtime-status] [36095] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36095] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2023-02-15T10:24:05.056Z] [runtime-status] [36095] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36095] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:24:05.057Z] [runtime-status] [36095] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36095] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-15T10:24:05.057Z] [runtime-status] [36095] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36095] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:24:05.057Z] [runtime-status] [36095] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36095] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-02-15T10:24:05.107Z] [runtime-status] [36095] Functions runtime initialized. {"cwd":"/home/samkach/Desktop/projects/MealsToGo/functions","node_version":"16.17.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36095] Functions runtime initialized. {\"cwd\":\"/home/samkach/Desktop/projects/MealsToGo/functions\",\"node_version\":\"16.17.0\"}"}}
+[debug] [2023-02-15T10:24:05.108Z] [runtime-status] [36095] Listening to port: /tmp/fire_emu_f8257347339c329b.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36095] Listening to port: /tmp/fire_emu_f8257347339c329b.sock"}}
+[debug] [2023-02-15T10:24:05.167Z] [worker-us-central1-geocode-245edfaf-c750-45f7-a0af-33d3c6f3e5ab]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-245edfaf-c750-45f7-a0af-33d3c6f3e5ab]: IDLE"}}
+[debug] [2023-02-15T10:24:05.167Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2023-02-15T10:24:05.167Z] [worker-us-central1-geocode-245edfaf-c750-45f7-a0af-33d3c6f3e5ab]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-245edfaf-c750-45f7-a0af-33d3c6f3e5ab]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2023-02-15T10:24:05.175Z] [worker-us-central1-geocode-245edfaf-c750-45f7-a0af-33d3c6f3e5ab]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-245edfaf-c750-45f7-a0af-33d3c6f3e5ab]: IDLE"}}
+[debug] [2023-02-15T10:24:05.176Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 28.401108ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 28.401108ms"}}
+[warn] ⚠  functions: Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at new NodeError (node:internal/errors:387:5)
+    at ServerResponse.setHeader (node:_http_outgoing:603:11)
+    at ServerResponse.header (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:794:10)
+    at ServerResponse.contentType (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:624:15)
+    at ServerResponse.send (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:149:14)
+    at module.exports.geocodeRequest (/home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js:27:31)
+    at /home/samkach/Desktop/projects/MealsToGo/functions/index.js:9:3
+    at cloudFunction (/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/providers/https.js:50:16)
+    at /home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:530:16
+    at runFunction (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:504:15) {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client\n    at new NodeError (node:internal/errors:387:5)\n    at ServerResponse.setHeader (node:_http_outgoing:603:11)\n    at ServerResponse.header (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:794:10)\n    at ServerResponse.contentType (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:624:15)\n    at ServerResponse.send (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:149:14)\n    at module.exports.geocodeRequest (/home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js:27:31)\n    at /home/samkach/Desktop/projects/MealsToGo/functions/index.js:9:3\n    at cloudFunction (/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/providers/https.js:50:16)\n    at /home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:530:16\n    at runFunction (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:504:15)"}}
+[warn] ⚠  Your function was killed because it raised an unhandled error. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Your function was killed because it raised an unhandled error."}}
+[debug] [2023-02-15T10:24:05.220Z] [worker-us-central1-geocode-245edfaf-c750-45f7-a0af-33d3c6f3e5ab]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-245edfaf-c750-45f7-a0af-33d3c6f3e5ab]: exited"}}
+[debug] [2023-02-15T10:24:05.220Z] [worker-us-central1-geocode-245edfaf-c750-45f7-a0af-33d3c6f3e5ab]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-245edfaf-c750-45f7-a0af-33d3c6f3e5ab]: FINISHED"}}
+[debug] [2023-02-15T10:24:10.625Z] [work-queue] {"queuedWork":["/meals-to-go-cb72d/us-central1/geocode-2023-02-15T10:24:10.625Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-15T10:24:10.625Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/meals-to-go-cb72d/us-central1/geocode-2023-02-15T10:24:10.625Z"],"workRunningCount":1}
+[debug] [2023-02-15T10:24:10.625Z] Accepted request GET /meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=false --> us-central1-geocode
+[debug] [2023-02-15T10:24:10.626Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-15T10:24:10.626Z] [functions] Got req.url=/meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=false, mapping to path=/?city=chicago&mock=false {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=false, mapping to path=/?city=chicago&mock=false"}}
+[debug] [2023-02-15T10:24:10.626Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2023-02-15T10:24:10.635Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2023-02-15T10:24:10.635Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2023-02-15T10:24:11.408Z] [runtime-status] [36177] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36177] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-15T10:24:11.409Z] [runtime-status] [36177] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36177] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:24:11.409Z] [runtime-status] [36177] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36177] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-02-15T10:24:11.410Z] [runtime-status] [36177] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36177] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:24:11.444Z] [runtime-status] [36177] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36177] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-02-15T10:24:11.444Z] [runtime-status] [36177] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36177] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2023-02-15T10:24:11.445Z] [runtime-status] [36177] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36177] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:24:11.446Z] [runtime-status] [36177] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36177] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-15T10:24:11.446Z] [runtime-status] [36177] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36177] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:24:11.446Z] [runtime-status] [36177] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36177] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-02-15T10:24:11.497Z] [runtime-status] [36177] Functions runtime initialized. {"cwd":"/home/samkach/Desktop/projects/MealsToGo/functions","node_version":"16.17.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36177] Functions runtime initialized. {\"cwd\":\"/home/samkach/Desktop/projects/MealsToGo/functions\",\"node_version\":\"16.17.0\"}"}}
+[debug] [2023-02-15T10:24:11.497Z] [runtime-status] [36177] Listening to port: /tmp/fire_emu_4ac0fa88f57bb461.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36177] Listening to port: /tmp/fire_emu_4ac0fa88f57bb461.sock"}}
+[debug] [2023-02-15T10:24:11.547Z] [worker-us-central1-geocode-d2c89eb8-ed2d-4b79-a3e4-f9dcbd420513]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-d2c89eb8-ed2d-4b79-a3e4-f9dcbd420513]: IDLE"}}
+[debug] [2023-02-15T10:24:11.547Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2023-02-15T10:24:11.547Z] [worker-us-central1-geocode-d2c89eb8-ed2d-4b79-a3e4-f9dcbd420513]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-d2c89eb8-ed2d-4b79-a3e4-f9dcbd420513]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2023-02-15T10:24:11.555Z] [worker-us-central1-geocode-d2c89eb8-ed2d-4b79-a3e4-f9dcbd420513]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-d2c89eb8-ed2d-4b79-a3e4-f9dcbd420513]: IDLE"}}
+[debug] [2023-02-15T10:24:11.555Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 3.502947ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 3.502947ms"}}
+[debug] [2023-02-15T10:25:37.582Z] File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2023-02-15T10:25:38.583Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-15T10:25:39.494Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-15T10:25:39.494Z] Building nodejs source
+[debug] [2023-02-15T10:25:39.494Z] Failed to find version of module node: reached end of search path /home/samkach/Desktop/projects/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-15T10:25:39.496Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-15T10:25:39.497Z] Found firebase-functions binary at '/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-15T10:25:39.515Z] File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2023-02-15T10:25:39.714Z] Serving at port 8543
+
+[debug] [2023-02-15T10:25:39.842Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-15T10:25:39.850Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-02-15T10:25:39.857Z] [worker-pool] Shutting down IDLE worker (us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-geocode)"}}
+[debug] [2023-02-15T10:25:39.858Z] [worker-us-central1-geocode-d2c89eb8-ed2d-4b79-a3e4-f9dcbd420513]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-d2c89eb8-ed2d-4b79-a3e4-f9dcbd420513]: FINISHING"}}
+[debug] [2023-02-15T10:25:39.868Z] [worker-us-central1-geocode-d2c89eb8-ed2d-4b79-a3e4-f9dcbd420513]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-d2c89eb8-ed2d-4b79-a3e4-f9dcbd420513]: exited"}}
+[debug] [2023-02-15T10:25:39.868Z] [worker-us-central1-geocode-d2c89eb8-ed2d-4b79-a3e4-f9dcbd420513]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-d2c89eb8-ed2d-4b79-a3e4-f9dcbd420513]: FINISHED"}}
+[debug] [2023-02-15T10:25:40.516Z] Validating nodejs source
+[warn] ⚠  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] ⚠  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2023-02-15T10:25:41.133Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2023-02-15T10:25:41.133Z] Building nodejs source
+[debug] [2023-02-15T10:25:41.133Z] Failed to find version of module node: reached end of search path /home/samkach/Desktop/projects/MealsToGo/functions/node_modules
+[info] ✔  functions: Using node@16 from host. 
+[debug] [2023-02-15T10:25:41.135Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-02-15T10:25:41.136Z] Found firebase-functions binary at '/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/.bin/firebase-functions'
+[debug] [2023-02-15T10:25:41.313Z] Serving at port 8379
+
+[debug] [2023-02-15T10:25:41.418Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-02-15T10:25:41.423Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[debug] [2023-02-15T10:25:50.229Z] [work-queue] {"queuedWork":["/meals-to-go-cb72d/us-central1/geocode-2023-02-15T10:25:50.229Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-15T10:25:50.229Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/meals-to-go-cb72d/us-central1/geocode-2023-02-15T10:25:50.229Z"],"workRunningCount":1}
+[debug] [2023-02-15T10:25:50.229Z] Accepted request GET /meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=true --> us-central1-geocode
+[debug] [2023-02-15T10:25:50.230Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-15T10:25:50.230Z] [functions] Got req.url=/meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=true, mapping to path=/?city=chicago&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=true, mapping to path=/?city=chicago&mock=true"}}
+[debug] [2023-02-15T10:25:50.230Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2023-02-15T10:25:50.240Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2023-02-15T10:25:50.240Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2023-02-15T10:25:51.001Z] [runtime-status] [36641] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36641] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-15T10:25:51.002Z] [runtime-status] [36641] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36641] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:25:51.002Z] [runtime-status] [36641] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36641] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-02-15T10:25:51.004Z] [runtime-status] [36641] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36641] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:25:51.040Z] [runtime-status] [36641] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36641] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-02-15T10:25:51.041Z] [runtime-status] [36641] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36641] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2023-02-15T10:25:51.042Z] [runtime-status] [36641] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36641] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:25:51.042Z] [runtime-status] [36641] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36641] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-15T10:25:51.043Z] [runtime-status] [36641] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36641] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:25:51.044Z] [runtime-status] [36641] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36641] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-02-15T10:25:51.100Z] [runtime-status] [36641] Functions runtime initialized. {"cwd":"/home/samkach/Desktop/projects/MealsToGo/functions","node_version":"16.17.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36641] Functions runtime initialized. {\"cwd\":\"/home/samkach/Desktop/projects/MealsToGo/functions\",\"node_version\":\"16.17.0\"}"}}
+[debug] [2023-02-15T10:25:51.101Z] [runtime-status] [36641] Listening to port: /tmp/fire_emu_3363d3292e329b39.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36641] Listening to port: /tmp/fire_emu_3363d3292e329b39.sock"}}
+[debug] [2023-02-15T10:25:51.154Z] [worker-us-central1-geocode-ef30bde3-5d65-4418-bd55-fa90a7393239]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-ef30bde3-5d65-4418-bd55-fa90a7393239]: IDLE"}}
+[debug] [2023-02-15T10:25:51.155Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2023-02-15T10:25:51.155Z] [worker-us-central1-geocode-ef30bde3-5d65-4418-bd55-fa90a7393239]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-ef30bde3-5d65-4418-bd55-fa90a7393239]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2023-02-15T10:25:51.163Z] [worker-us-central1-geocode-ef30bde3-5d65-4418-bd55-fa90a7393239]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-ef30bde3-5d65-4418-bd55-fa90a7393239]: IDLE"}}
+[debug] [2023-02-15T10:25:51.164Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 39.052906ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 39.052906ms"}}
+[info] >  node:internal/errors:477 {"user":"node:internal/errors:477","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m node:internal/errors:477"}}
+[info] >      ErrorCaptureStackTrace(err); {"user":"    ErrorCaptureStackTrace(err);","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m     ErrorCaptureStackTrace(err);"}}
+[info] >      ^ {"user":"    ^","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m     ^"}}
+[info] >   {"user":"","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m "}}
+[info] >  Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client {"user":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client"}}
+[info] >      at new NodeError (node:internal/errors:387:5) {"user":"    at new NodeError (node:internal/errors:387:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m     at new NodeError (node:internal/errors:387:5)"}}
+[info] >      at ServerResponse.setHeader (node:_http_outgoing:603:11) {"user":"    at ServerResponse.setHeader (node:_http_outgoing:603:11)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m     at ServerResponse.setHeader (node:_http_outgoing:603:11)"}}
+[info] >      at ServerResponse.header (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:794:10) {"user":"    at ServerResponse.header (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:794:10)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m     at ServerResponse.header (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:794:10)"}}
+[info] >      at ServerResponse.contentType (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:624:15) {"user":"    at ServerResponse.contentType (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:624:15)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m     at ServerResponse.contentType (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:624:15)"}}
+[info] >      at ServerResponse.send (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:149:14) {"user":"    at ServerResponse.send (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:149:14)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m     at ServerResponse.send (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:149:14)"}}
+[info] >      at /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js:24:23 {"user":"    at /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js:24:23","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m     at /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js:24:23"}}
+[info] >      at processTicksAndRejections (node:internal/process/task_queues:96:5) { {"user":"    at processTicksAndRejections (node:internal/process/task_queues:96:5) {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m     at processTicksAndRejections (node:internal/process/task_queues:96:5) {"}}
+[info] >    code: 'ERR_HTTP_HEADERS_SENT' {"user":"  code: 'ERR_HTTP_HEADERS_SENT'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   code: 'ERR_HTTP_HEADERS_SENT'"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[debug] [2023-02-15T10:25:51.540Z] [worker-us-central1-geocode-ef30bde3-5d65-4418-bd55-fa90a7393239]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-ef30bde3-5d65-4418-bd55-fa90a7393239]: exited"}}
+[debug] [2023-02-15T10:25:51.540Z] [worker-us-central1-geocode-ef30bde3-5d65-4418-bd55-fa90a7393239]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-ef30bde3-5d65-4418-bd55-fa90a7393239]: FINISHED"}}
+[debug] [2023-02-15T10:25:52.411Z] [work-queue] {"queuedWork":["/meals-to-go-cb72d/us-central1/geocode-2023-02-15T10:25:52.411Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-15T10:25:52.412Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/meals-to-go-cb72d/us-central1/geocode-2023-02-15T10:25:52.411Z"],"workRunningCount":1}
+[debug] [2023-02-15T10:25:52.412Z] Accepted request GET /meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=true --> us-central1-geocode
+[debug] [2023-02-15T10:25:52.413Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-15T10:25:52.414Z] [functions] Got req.url=/meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=true, mapping to path=/?city=chicago&mock=true {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=true, mapping to path=/?city=chicago&mock=true"}}
+[debug] [2023-02-15T10:25:52.415Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2023-02-15T10:25:52.439Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2023-02-15T10:25:52.440Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2023-02-15T10:25:53.270Z] [runtime-status] [36741] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36741] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-15T10:25:53.271Z] [runtime-status] [36741] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36741] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:25:53.274Z] [runtime-status] [36741] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36741] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-02-15T10:25:53.274Z] [runtime-status] [36741] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36741] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:25:53.309Z] [runtime-status] [36741] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36741] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-02-15T10:25:53.309Z] [runtime-status] [36741] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36741] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2023-02-15T10:25:53.310Z] [runtime-status] [36741] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36741] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:25:53.311Z] [runtime-status] [36741] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36741] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-15T10:25:53.311Z] [runtime-status] [36741] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36741] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:25:53.311Z] [runtime-status] [36741] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36741] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-02-15T10:25:53.360Z] [runtime-status] [36741] Functions runtime initialized. {"cwd":"/home/samkach/Desktop/projects/MealsToGo/functions","node_version":"16.17.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36741] Functions runtime initialized. {\"cwd\":\"/home/samkach/Desktop/projects/MealsToGo/functions\",\"node_version\":\"16.17.0\"}"}}
+[debug] [2023-02-15T10:25:53.360Z] [runtime-status] [36741] Listening to port: /tmp/fire_emu_8e6581eddefb4cee.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36741] Listening to port: /tmp/fire_emu_8e6581eddefb4cee.sock"}}
+[debug] [2023-02-15T10:25:53.452Z] [worker-us-central1-geocode-242fe264-794f-44fc-a699-c4769202bf32]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-242fe264-794f-44fc-a699-c4769202bf32]: IDLE"}}
+[debug] [2023-02-15T10:25:53.452Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2023-02-15T10:25:53.452Z] [worker-us-central1-geocode-242fe264-794f-44fc-a699-c4769202bf32]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-242fe264-794f-44fc-a699-c4769202bf32]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2023-02-15T10:25:53.461Z] [worker-us-central1-geocode-242fe264-794f-44fc-a699-c4769202bf32]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-242fe264-794f-44fc-a699-c4769202bf32]: IDLE"}}
+[debug] [2023-02-15T10:25:53.461Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 28.781437ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 28.781437ms"}}
+[info] >  node:internal/errors:477 {"user":"node:internal/errors:477","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m node:internal/errors:477"}}
+[info] >      ErrorCaptureStackTrace(err); {"user":"    ErrorCaptureStackTrace(err);","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m     ErrorCaptureStackTrace(err);"}}
+[info] >      ^ {"user":"    ^","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m     ^"}}
+[info] >   {"user":"","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m "}}
+[info] >  Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client {"user":"Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client"}}
+[info] >      at new NodeError (node:internal/errors:387:5) {"user":"    at new NodeError (node:internal/errors:387:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m     at new NodeError (node:internal/errors:387:5)"}}
+[info] >      at ServerResponse.setHeader (node:_http_outgoing:603:11) {"user":"    at ServerResponse.setHeader (node:_http_outgoing:603:11)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m     at ServerResponse.setHeader (node:_http_outgoing:603:11)"}}
+[info] >      at ServerResponse.header (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:794:10) {"user":"    at ServerResponse.header (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:794:10)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m     at ServerResponse.header (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:794:10)"}}
+[info] >      at ServerResponse.contentType (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:624:15) {"user":"    at ServerResponse.contentType (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:624:15)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m     at ServerResponse.contentType (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:624:15)"}}
+[info] >      at ServerResponse.send (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:149:14) {"user":"    at ServerResponse.send (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:149:14)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m     at ServerResponse.send (/home/samkach/.nvm/versions/node/v16.17.0/lib/node_modules/firebase-tools/node_modules/express/lib/response.js:149:14)"}}
+[info] >      at /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js:24:23 {"user":"    at /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js:24:23","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m     at /home/samkach/Desktop/projects/MealsToGo/functions/geocode/index.js:24:23"}}
+[info] >      at processTicksAndRejections (node:internal/process/task_queues:96:5) { {"user":"    at processTicksAndRejections (node:internal/process/task_queues:96:5) {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m     at processTicksAndRejections (node:internal/process/task_queues:96:5) {"}}
+[info] >    code: 'ERR_HTTP_HEADERS_SENT' {"user":"  code: 'ERR_HTTP_HEADERS_SENT'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m   code: 'ERR_HTTP_HEADERS_SENT'"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[debug] [2023-02-15T10:25:53.824Z] [worker-us-central1-geocode-242fe264-794f-44fc-a699-c4769202bf32]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-242fe264-794f-44fc-a699-c4769202bf32]: exited"}}
+[debug] [2023-02-15T10:25:53.825Z] [worker-us-central1-geocode-242fe264-794f-44fc-a699-c4769202bf32]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-242fe264-794f-44fc-a699-c4769202bf32]: FINISHED"}}
+[debug] [2023-02-15T10:26:03.214Z] [work-queue] {"queuedWork":["/meals-to-go-cb72d/us-central1/geocode-2023-02-15T10:26:03.214Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-02-15T10:26:03.214Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/meals-to-go-cb72d/us-central1/geocode-2023-02-15T10:26:03.214Z"],"workRunningCount":1}
+[debug] [2023-02-15T10:26:03.214Z] Accepted request GET /meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=false --> us-central1-geocode
+[debug] [2023-02-15T10:26:03.215Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-02-15T10:26:03.215Z] [functions] Got req.url=/meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=false, mapping to path=/?city=chicago&mock=false {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/meals-to-go-cb72d/us-central1/geocode?city=chicago&mock=false, mapping to path=/?city=chicago&mock=false"}}
+[debug] [2023-02-15T10:26:03.215Z] [worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-geocode: 1 --> 0"}}
+[debug] [2023-02-15T10:26:03.224Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2023-02-15T10:26:03.225Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2023-02-15T10:26:03.974Z] [runtime-status] [36807] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36807] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-15T10:26:03.975Z] [runtime-status] [36807] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36807] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:26:03.976Z] [runtime-status] [36807] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36807] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-02-15T10:26:03.978Z] [runtime-status] [36807] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36807] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:26:04.011Z] [runtime-status] [36807] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36807] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-02-15T10:26:04.011Z] [runtime-status] [36807] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36807] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2023-02-15T10:26:04.012Z] [runtime-status] [36807] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36807] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:26:04.013Z] [runtime-status] [36807] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36807] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2023-02-15T10:26:04.013Z] [runtime-status] [36807] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36807] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2023-02-15T10:26:04.014Z] [runtime-status] [36807] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36807] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/samkach/Desktop/projects/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2023-02-15T10:26:04.064Z] [runtime-status] [36807] Functions runtime initialized. {"cwd":"/home/samkach/Desktop/projects/MealsToGo/functions","node_version":"16.17.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36807] Functions runtime initialized. {\"cwd\":\"/home/samkach/Desktop/projects/MealsToGo/functions\",\"node_version\":\"16.17.0\"}"}}
+[debug] [2023-02-15T10:26:04.065Z] [runtime-status] [36807] Listening to port: /tmp/fire_emu_8d56be6121925908.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [36807] Listening to port: /tmp/fire_emu_8d56be6121925908.sock"}}
+[debug] [2023-02-15T10:26:04.137Z] [worker-us-central1-geocode-b57e4e6c-9578-49a1-8d25-31ed0aae9027]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-b57e4e6c-9578-49a1-8d25-31ed0aae9027]: IDLE"}}
+[debug] [2023-02-15T10:26:04.138Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2023-02-15T10:26:04.138Z] [worker-us-central1-geocode-b57e4e6c-9578-49a1-8d25-31ed0aae9027]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-b57e4e6c-9578-49a1-8d25-31ed0aae9027]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2023-02-15T10:26:04.490Z] [worker-us-central1-geocode-b57e4e6c-9578-49a1-8d25-31ed0aae9027]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-b57e4e6c-9578-49a1-8d25-31ed0aae9027]: IDLE"}}
+[debug] [2023-02-15T10:26:04.490Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 346.591647ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 346.591647ms"}}
