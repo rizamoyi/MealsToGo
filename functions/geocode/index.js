@@ -1,5 +1,6 @@
 const { locations: locationsMock } = require("./geocode.mock");
 const url = require("url");
+const functions = require("firebase-functions");
 
 module.exports.geocodeRequest = (request, response, client) => {
   const { city, mock } = url.parse(request.url, true).query;
@@ -12,7 +13,7 @@ module.exports.geocodeRequest = (request, response, client) => {
     .geocode({
       params: {
         address: city,
-        key: "",
+        key: functions.config().google.key,
       },
       timeout: 1000,
     })
@@ -23,6 +24,4 @@ module.exports.geocodeRequest = (request, response, client) => {
       response.status(400);
       return response.send(e.response.data.error_message);
     });
-
-  // return response.status(400).send("You must set mock to true");
 };
